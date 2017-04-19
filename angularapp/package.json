@@ -1,0 +1,22 @@
+{
+  "name": "angularapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrutih-cuelogic/angular-training-poc.git"
+  },
+  "scripts": {
+      "start": "http-server -a localhost -p 8080 -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrutih-cuelogic/angular-training-poc/issues"
+  },
+  "homepage": "https://github.com/shrutih-cuelogic/angular-training-poc#readme",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
