@@ -1,0 +1,32 @@
+.panel-body {
+    padding: 14px;
+}
+.panel-default {
+	opacity: 0.9;
+	margin-top:30px;
+	width: 120%;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #b7b4b4;
+    border-color: #ddd;
+    font-size: 21px;
+}
+.form-group.last {
+	margin-bottom:0px;
+}
+.form-control {
+    display: block;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+}
+.loginbtn button {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 12px;
