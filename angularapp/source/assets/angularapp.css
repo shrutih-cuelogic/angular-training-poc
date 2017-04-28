@@ -30,3 +30,19 @@
     font-size: 14px;
     margin-top: 15px;
     margin-left: 12px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
+.user-container {
+    height: 100%;
+    width: 70%;
+    border-color: #e7e7e7;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 40px;
+}
