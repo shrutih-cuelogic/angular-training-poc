@@ -12,6 +12,11 @@
                 templateUrl: '/source/modules/profile/views/profile.html',
                 controller: 'profileController'
             })
+            .state('editprofile', {
+                url: '/editprofile/:id',
+                templateUrl: '/source/modules/profile/views/editprofile.html',
+                controller: 'profileController'
+            })
     };
 
 })();

@@ -10,7 +10,6 @@
 	        return $q(function(resolve, reject) {
 	            valid = false;
 	            var user_records = profileService.getUserAllDetails();
-	            console.log(user_records);
 	            for (var i = 0; i < user_records.length; i++) {
 	                if (user_records[i]['email'] == email && user_records[i]['password'] == password) {
 	                    valid = true;

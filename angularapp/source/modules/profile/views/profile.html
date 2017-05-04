@@ -12,37 +12,22 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div class="user-container">
-  <div class="row-fluid">
-        <div class="col-md-3">
-        <img src="{{ item.emp_img }}" class="img-circle">
+  <div class="row profileLisiting">
+        <div class="col-md-4 profileimage">
+          <h3>{{user_details.firstname}} {{user_details.lastname}}</h3><img src="{{ user_details.userimg }}" class="img-circle img-responsive">
+        </div>
+        <div class="col-md-6 profileSection">
+            <h4>Email:   {{ user_details.email }}</h4>
+            <h4>Firstname:   {{ user_details.firstname }}</h4>
+            <h4>Lastname:   {{ user_details.lastname }}</h4>
+            <h4>Gender:   {{ user_details.gender }}</h4>
+            <h4>Address:   {{ user_details.address }}</h4>
         </div>
         
-        <div class="col-md-3">
-            <h3>{{ item.username }}</h3>
-            <h6>Email: MyEmail@servidor.com</h6>
-            <h6>Ubication: Colombia</h6>
-            <h6>Old: 1 Year</h6>
-            <h2>Profile Image</h2>
-            <h2 class="id">ID</h2>
-            <h2 class="firstname">Firstname: </h2>
-            <h2 class="lastname">Lastname</h2>
-            <h2 class="username">Username</h2>
-            <h2 class="gender">Gender</h2>
-            <h2 class="ah3ddress">Address </h2>
-
-             <td><img src="{{ item.emp_img }}"/></td>
-          <td>{{ item.id }}</td>
-          <td>{{ item.firstname }}</td>
-          <td>{{ item.lastname }}</td>
-          <td>{{ item.username }}</td>
-          <td>{{ item.gender }}</td>
-          <td>{{ item.address }}</td>
-        </div>
-        
-        <div class="span2">
+        <div class="col-md-2">
           <span class="pull-right">
-            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
-            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+            <a ui-sref="editprofile({ id: user_details.id })" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+            <a type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
           </span>
         </div>
   </div>
