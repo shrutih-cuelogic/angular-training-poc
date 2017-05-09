@@ -5,7 +5,8 @@
         'LocalStorageModule',
         'auth',
         'profile',
-        'services'
+        'services',
+        'constants',
     ]).config(['$urlRouterProvider', function($urlRouterProvider) {
         $urlRouterProvider.otherwise('/login');
     }])

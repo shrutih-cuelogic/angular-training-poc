@@ -1,15 +1,15 @@
 <div class="container">
     <div class="row">
-        <div class="col-md-5 col-md-offset-3">
+        <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-default">
-                <div class="panel-heading text-center"> <strong class="">Login Form</strong></div>
+                <div class="panel-heading text-center"> <strong>Login Form</strong></div>
                 <div class="panel-body">
                     <form class="form-horizontal" name="loginForm" role="form" ng-submit="login()" >
                         <div ng-show="error" class="alert alert-danger text-center">{{error}}</div>
                         <div class="form-group">
                             <label for="email" class="col-sm-3 control-label">Email</label>
                             <div class="col-sm-9">
-                                <input type="email" name="email" placeholder="Email" ng-model="email" class="form-control" ng-pattern="emailFormat" required>
+                                <input type="email" name="email" placeholder="Email" ng-model="email" class="form-control" ng-pattern="chkvalidemail" required>
                                 <label class="error text-danger" ng-show="loginForm.email.$error.pattern">Email is not valid</label>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="panel-footer">Not Registered? <a href="#" class="">Register here</a>
+                <div class="panel-footer">Not Registered? <a ui-sref="registration">Register here</a>
                 </div>
             </div>
         </div>

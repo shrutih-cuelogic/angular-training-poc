@@ -1,11 +1,11 @@
 (function() {
 	angular.module('auth')
-		.controller('loginController',['$scope', '$state', 'serverLocalStorageService', 'loginService', 'profileService', LoginCntrl]);
+		.controller('loginController',['$scope', '$state', 'serverLocalStorageService', 'loginService', 'profileService', 'constantProvider', LoginCntrl]);
 
 
-	function LoginCntrl($scope, $state, serverLocalStorageService, loginService, profileService) {
+	function LoginCntrl($scope, $state, serverLocalStorageService, loginService, profileService, constantProvider) {
 		$scope.error = "";
-		$scope.emailFormat = /^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,}$/;
+		$scope.chkvalidemail = constantProvider.chkemailFormat;
 		$scope.login = function(){
 			loginService.validateLogin($scope.email, $scope.password)
 				.then(function(response) {
